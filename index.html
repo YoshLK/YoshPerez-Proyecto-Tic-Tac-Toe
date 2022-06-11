@@ -1,0 +1,23 @@
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<link rel="shortcut icon" href="favicon.ico" />
+
+
+<center>
+    <p class="centeredbig">Tic-Tac-Toe Ultimate Yosh Perez </p>
+    <div class="relative">
+        <canvas id="TableroVista" width="600" height="600"> 
+        </canvas>
+        <div class="absolute" id="startMenu">
+            <p class="centered" onclick="tipoJuego(1)"><button>Jugador VS Agente</button></p>
+            <p class="centered" onclick="inicarJuego(1)"><button>2 Jugadores</button></p>
+        </div>
+        <div class="absolute" id="winMenu" hidden="hidden">
+            <p class="centeredbig" id="result">Gana el Jugador 1 </p>
+        </div>
+        <div class="absolute fade" id="loader" hidden>
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+</center>
+<script src="MinMax.js"></script>
